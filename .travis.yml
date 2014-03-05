@@ -1,0 +1,9 @@
+language: java
+script: mvn deploy --settings project-resources/ci-settings.xml
+branches:
+  only:
+  - master
+env:
+  global:
+  - secure: D0VOwD6G8CVi6eUBbys3I79VmzKvBfKHcyR7N7gRzPsw9PMPhOfS0ELEsqd+0FRGWgt2rbqZoA8PLye5ZL7UGLy9xIkzI5ivl/XphNqwZ2KT4TQokRR2juP85iWW/T3qlinwAqwW+6d+ADzHlmQneoZlrO38+WMNAPyqiBmuN20=
+  - secure: IRFKs+d8APeOzYLjve+8T6RfCeGEJqgXnKX/SupYbK8kh2oHm98OlgRA1f8Z3bgMEtqZfRGPyncnPLF5GY+hyXXei4kJJ7qtBebAT6G/2YMO2a2cRJ3JVBu18PJRR5SdV+hL0fIF3jpMMLjbxYeVHOpfQWTXZtSY+A+EJUmBVLI=
