@@ -139,7 +139,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.4.1</version>
                 <configuration>
-                    <tagNameFormat>smartcache-@{project.version}</tagNameFormat>
+                    <tagNameFormat>annotationscanner-@{project.version}</tagNameFormat>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
