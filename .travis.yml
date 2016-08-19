@@ -1,8 +1,16 @@
+sudo: false
+
 language: java
-script: mvn deploy --settings project-resources/ci-settings.xml
+
+install: ./gradlew assemble
+script:
+  - ./gradlew check
+  - ./gradlew uploadArchives -PnexusUsername=smartparam -PnexusPassword=$NEXUS_PASSWORD
+
 branches:
   only:
   - master
+
 env:
   global:
   - secure: D0VOwD6G8CVi6eUBbys3I79VmzKvBfKHcyR7N7gRzPsw9PMPhOfS0ELEsqd+0FRGWgt2rbqZoA8PLye5ZL7UGLy9xIkzI5ivl/XphNqwZ2KT4TQokRR2juP85iWW/T3qlinwAqwW+6d+ADzHlmQneoZlrO38+WMNAPyqiBmuN20=
