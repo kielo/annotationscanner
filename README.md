@@ -10,10 +10,6 @@ tests.
 
 ## How to get it?
 
-```xml
-<dependency>
-    <groupId>org.kielo.annotationscanner</groupId>
-    <artifactId>annotationscanner</artifactId>
-    <version>0.1.0</version>
-</dependency>
+```groovy
+compile group: 'org.kielo.annotationscanner', name: 'annotationscanner', version: '0.1.0'
 ```
